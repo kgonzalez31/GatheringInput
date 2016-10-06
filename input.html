@@ -3,13 +3,23 @@
   <head>
     <title>GatheringInput</title>
       <script>
-  
-       }
+      function getName(){
+
+        var fullName;
+        var fullName1;
+        fullName = document.getElementById("first").value;
+        fullName1 = document.getElementById("last").value;
+        document.getElementById("message").innerHTML = fullName+ " "+fullName1;
+
+
+        }
+
       </script>
   </head>
   <body>
-    <input type="first">
-    <input type="last">
-    <button type="button" id="donebutton" onclick="getName();">Done</button>
+    <input type="text" id="first"/>
+    <input type="text" id="last"/>
+    <button type="button" id="doneButton" onclick="getName();">Done</button>
+    <p id="message"> </p>
   </body>
 </html>
